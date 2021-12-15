@@ -1,0 +1,60 @@
+SELECT Empleado.CI, Empleado.Nombre 
+
+FROM Edicion, Nota, Empleado, Curso PRE,  Curso MATERIA
+
+WHERE Empleado.CI=Nota.CIalum AND 
+
+                        Nota.IDedicion=Edicion.ID AND 
+
+                        Edicion.CODcurso=MATERIA.Cod AND 
+
+                        MATERIA.CodPreq=PRE.Cod AND 
+
+                        PRE.titulo='Delphi Basico';
+
+ 
+
+/* RESULTADO
+
+CI         NOMBRE
+
+444      Bob Pati�o
+
+555      Maria Prisma
+
+*/
+
+
+SELECT Curso.Cod , DOC.CI , DOC.Nombre, count(ALUM.CI) AS 'CANTIDAD DE ALUMNAS'
+
+FROM  Nota, Empleado ALUM, Empleado DOC, Edicion , Curso , Tema
+
+WHERE NOTA.IDedicion=Edicion.ID AND
+
+              DOC.CI = Edicion.CIDOC  AND
+
+              Curso.IDtema = Tema.ID AND
+
+              Edicion.CODcurso= Curso.Cod AND
+
+              ALUM.CI = Nota.CIalum  AND
+
+              ALUM.sexo = 'f'      
+
+GROUP BY (DOC.CI)
+
+ 
+
+/* RESPUESTA
+
+COD CI   NOMBRE           CANTIDAD DE ALUMNAS
+
+983      111      Joaquin Chumacero    2
+
+985      222      Juan Topo        1
+
+981      333      Ned Flanders   2
+
+982      432      Rafa Gorgori   1
+
+*/
