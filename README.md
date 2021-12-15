@@ -12,7 +12,7 @@ Universidad Autónoma Gabriel René Moreno
 
 Para cualquier consulta o reclamo escribir al twuitter: https://twitter.com/Lpericena
 
-Los siguientes problemas y ejercicios son recopilación de tareas y exámenes la materia estructura de datos I impartida por el Ing. Mario López Winnipeg
+Los siguientes problemas y ejercicios son recopilación de tareas y exámenes la materia 
 
 ### Informacion
 '''
