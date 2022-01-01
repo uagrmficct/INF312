@@ -13,4 +13,10 @@ Universidad Autónoma Gabriel René Moreno
 Para cualquier consulta o reclamo escribir al twuitter: https://twitter.com/Lpericena
 
 Los siguientes problemas y ejercicios son recopilación de tareas y exámenes la materia 
+### Informacion
+'''
+https://lpericena.blogspot.com/2021/06/cuestionario-base-de-datos-i-capitulo-1.html
+https://lpericena.blogspot.com/2021/08/cuestionario-base-de-datos-i-capitulo-2.html
+'''
+
 
